@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0b7162;
+    color: rgb(0, 0, 0);
+    
+}
+.convertor-container{
+    background: white;
+    border-radius: 8px;
+    box-shadow:  10px 14px 20px rgba(0,0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    padding: 24px 30px;
+    text-align: center;
+}
+.convertor-container h1{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 40px;
+    
+}
+.input-container{
+    border: 3px solid black;
+    border-radius: 3px;
+    margin-block: 20px;
+}
+.input-container:focus-within{
+    border-color: rgb(21, 21, 219);
+}
+.input-container input,.input-container select{
+    border: none;
+    outline: none;
+    width: 150px;
+    font-size: 15px;
+    padding: 20px;
+    overflow: hidden;
+}
+.arrow{
+    transform: rotate(90deg);
+    font-size:40px;
+    font-weight: 700;
+}
+.result{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+/* responsive code  */
+@media screen and (max-width:460px) {
+    .convertor-container{
+        width: 80%;
+        margin: 0 auto;
+    }
+    h1{
+        font-size: 22px;
+    }
+    .input-container{
+        border: none;
+    }
+    .input-container input,.input-container select{
+        border: 1px solid black;
+        margin-block: 4px;
+        width: 100%;
+    }
+}
